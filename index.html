@@ -2,92 +2,7 @@
 <html lang="en">
 <head>
   <title>Simple Calculator</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f4f8;
-      margin: 0;
-      padding: 0;
-    }
-
-    h1 {
-      color: #333;
-      margin-top: 40px;
-    }
-
-    table {
-      border-collapse: collapse;
-      background: #ffffff;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    td {
-      padding: 10px;
-    }
-
-    input[type="text"] {
-      width: 100%;
-      height: 60px;
-      font-size: 24px;
-      text-align: right;
-      padding: 10px;
-      border: none;
-      background: #f9f9f9;
-      color: #333;
-      border-bottom: 2px solid #ccc;
-    }
-
-    input[type="button"] {
-      width: 60px;
-      height: 60px;
-      font-size: 20px;
-      border: none;
-      border-radius: 8px;
-      background-color: #e0e7ff;
-      color: #333;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
-    }
-
-    input[type="button"]:hover {
-      background-color: #c7d2fe;
-    }
-
-    input[type="button"][value="="] {
-      background-color: #34d399;
-      color: white;
-    }
-
-    input[type="button"][value="="]:hover {
-      background-color: #10b981;
-    }
-
-    input[type="button"][value="C"] {
-      background-color: #f87171;
-      color: white;
-    }
-
-    input[type="button"][value="C"]:hover {
-      background-color: #ef4444;
-    }
-  </style>
-  <script>
-    function display(n) {
-      document.getElementById("expr").value += n;
-    }
-
-    function equals() {
-      let x = document.getElementById("expr").value;
-      let y = eval(x);
-      document.getElementById("expr").value = y;
-    }
-
-    function clearall() {
-      document.getElementById("expr").value = "";
-    }
-  </script>
+  <link rel="stylesheet" href="style.css"
 </head>
 <body>
   <center>
@@ -124,5 +39,6 @@
       </tr>
     </table>
   </center>
+  <script src="calculator.js"
 </body>
 </html>
